@@ -3,6 +3,8 @@ name: ExtraerENSU
 
 # Controlar cuando correr el codigo, workflow para correrlo con boton
 on:
+  schedule:
+    - cron: '0 10 * * *'
   workflow_dispatch: 
 
 permissions: 
