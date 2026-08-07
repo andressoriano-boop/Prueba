@@ -1,5 +1,5 @@
 # Enviar un correo si falla el codigo
-name: ExtraerENSU
+name: EnviarCorreoFalla
 
 # Controlar cuando correr el codigo, workflow para correrlo con boton
 on:
@@ -32,7 +32,7 @@ jobs:
       - name: Install packages
         run: |
           python -m pip install --upgrade pip 
-          pip install datetime requests zipfile36 pandas openpyxl traceback
+          pip install datetime requests zipfile36 pandas openpyxl traceback2
       
       # Correr codigo
       - name: Ejecutar python
